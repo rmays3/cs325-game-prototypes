@@ -25,17 +25,15 @@ GameStates.makePreloader = function( game ) {
             //	As this is just a Project Template I've not provided these assets, swap them for your own.
             game.load.image('titlePage', 'assets/title.jpg');
             game.load.atlas('playButton', 'assets/play_button.png', 'assets/play_button.json');
-            game.load.audio('titleMusic', ['assets/Poppers and Prosecco.mp3']);
+            game.load.audio('titleMusic', ['assets/Komiku Love Planet.mp3']);
+			game.load.audio('testMusic', ['assets/Komiku Surfing.mp3']);
             //	+ lots of other required assets here
-            game.load.image( 'logo', 'assets/phaser.png' );
-			game.load.atlas('tank', 'assets/tanks/tanks.png', 'assets/games/tanks/tanks.json');
-    game.load.atlas('enemy', 'assets/tanks/enemy-tanks.png', 'assets/games/tanks/tanks.json');
-    game.load.image('logo', 'assets/tanks/logo.png');
-    game.load.image('bullet', 'assets/tanks/bullet.png');
-    game.load.image('earth', 'assets/tanks/scorched_earth.png');
-    game.load.spritesheet('kaboom', 'assets/tanks/explosion.png', 64, 64, 23);
- game.load.image('stars', 'assets/misc/starfield.jpg');
-    game.load.spritesheet('ship', 'assets/sprites/humstar.png', 32, 32);
+ 			game.load.image('stars', 'assets/sea.jpg');
+    		game.load.spritesheet('ship', 'assets/humstar.png', 32, 32);
+			game.load.image('ball', 'assets/testball.png');
+			game.load.image('ball2', 'assets/testball.png');
+			game.load.image('catcher', 'assets/catcher.png');
+			game.load.image('bounds', 'assets/bounds.png');
         },
     
         create: function () {
