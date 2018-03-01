@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Don't Play Games at Work!</title>
+	<script src="js/phaser.min.js"></script>
+	<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/Game.js"></script>
+	<!-- main.js must come last since it references the other ones. -->
+	<script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>"Don't Play Games at Work!"</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+It's the game where not playing at the right time is the key to success!
+</li>
+
+<li><strong>Technical Merit:</strong>
+Gravity increases after the boss leaves, and players can generate a "window" sprite on command.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I mostly learned how timers worked in Phaser, which was the hardest part to do.  Originally I made four timers, when I just needed one.  The most enjoyable part was creating all the assets.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>All assets not listed here were self-made.</li>
+<li>Button: Phaser example <a href="https://phaser.io/examples/v2/buttons/action-on-click">Action On Click</a></li>
+<li>Title screen: <a href="https://www.publicdomainpictures.net/view-image.php?image=211753&picture=office-computer">Public Domain Pictures: Computer</a></li>
+<li>Game background: <a href="https://pxhere.com/en/photo/650272">Pxhere (Public Domain)</a></li>
+<li>Title Music: "Disco Cat" by Komiku (<a href="https://freemusicarchive.org/music/Komiku/Poupis_incredible_adventures_/Komiku_-_Poupis_incredible_adventures__-_16_Disco_Cat">Source</a>). Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a></li>
+<li>Title Music: "Garden party" by TRG Banks (<a href="https://freemusicarchive.org/music/TRG_Banks/The_Rainbows_End/Garden_party">Source</a>). Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+<ul>
+<li>The code for this example is adapted from the <a href="https://github.com/photonstorm/phaser/tree/v2.6.2/resources/Project%20Templates/Basic">Phaser Basic Project Template</a></li>
+<li>Closest Prototype to Game: <a href="https://phaser.io/examples/v2/arcade-physics/multiball">Multiball</a></li>
+<li>Click listener: <a href="https://phaser.io/examples/v2/basics/02-click-on-an-image">Click on an Image</a></li>
+<li>Changing sprites: <a href="https://phaser.io/examples/v2/animation/change-texture-on-click">Change Texture on Click</a></li>
+<li>math.Random: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random">Javascript Reference</a></li>
+<li>Timed events: <a href="https://phaser.io/examples/v2/time/basic-timed-event">Basic Timed Event</a></li>
+<li>Timed events, movement, collision, debug, game over text: <a href="https://rmays3.github.io/cs325-game-prototypes/digital-prototype-3/index.html">see Digital Prototype 3: Prototype Closest Other Game</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Get the high score while your boss isn't looking.
+</li>
+
+<li><strong>Theme:</strong>
+Ice
+</li>
+
+<li><strong>Mandated Variety:</strong>
+Input: Mouse
+Randomness: Completely random placement of snowflakes
+Genre: Stealth
+</li>
+
+<li><strong>Prototype Goal:</strong>
+Can I pull off more complex timed events?
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Players will experience satisfaction after memorizing the snowflakes' placement and avoiding them all while their screen is obscured.
+</li>
+
+<li><strong>Gameplay:</strong>
+While playing Dodge the Snowflakes, the player can move left or right using A, D and the arrow keys.  However, the bar at the top will alert the player whenever their boss draws near.  The player must open a window containing their "work" before that happens.  To do this, they click on the green ! button.  To get out, they click on the red X button.  
+
+However, the Dodge the Snowflakes is still active, so players must memorize where the snowflakes were, how they will land, and how to move accordingly.  If three small snowflakes or one huge one hits the fire, it's game over.  If the player's boss catches them, it's game over.  Watch out: snowflakes fall faster as the game progresses, and the button to open the "work" window moves randomly!
+</li>
+
+<li><strong>Strategies:</strong>
+In order to minimize their time not seeing the screen, the player can estimate how long the "warning" and "boss here" phases are and pull up the "work" screen at the nick of time.  More cautious players can pull up the screen earlier, but this puts the fireball at risk.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+You were just hired at The Company Enterprises, where you type things into computers for a very large paycheck.  But one day, a hot new game called "Dodge the Snowflakes" catches your eye.  You play it every morning, every night, even during work! But if the boss catches you playing it, your job is finished! Can you balance work and play?
+</li>
+
+<li><strong>Target Audience:</strong>
+Players of any age will relate, but younger audiences will appreciate the game's primary colors and "cute" player character.
+</li>
+
+<li><strong>Play Time:</strong>
+This game takes around 3 minutes to play.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
