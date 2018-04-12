@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>What You See</title>
+	<script src="js/phaser.min.js"></script>
+	<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/Game.js"></script>
+	<!--<script src="js/Gamel2.js"></script>-->
+	<!-- main.js must come last since it references the other ones. -->
+	<script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>"What You See"</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+In this game, some objects only exist when you tell them to.  Now has an extra objective!
+</li>
+
+<li><strong>Technical Merit:</strong>
+Detection disables for objects using a line of sight, which operates on a linear equation.  See, math is fun!
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned how I could refine the sight's accuracy using linear equations instead of using the bounds of the sight sprite, as well as the finer differences between collide and overlap.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>All assets not listed here were self-made.</li>
+<li>Button: Phaser example <a href="https://phaser.io/examples/v2/buttons/action-on-click">Action On Click</a></li>
+<li>Title Music/Game Music 6: "Flying" by TRG Banks (<a href="https://freemusicarchive.org/music/TRG_Banks/Kevelin_and_Chestnuts_Adventures/Flying_1313">Source</a>). Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a></li>
+<li>Game Music 1: "I Feel You" by Soft and Furious (<a href="https://freemusicarchive.org/music/Soft_and_Furious/Fluid/Soft_and_Furious_-_Fluid_-_01_I_Feel_You">Source</a>). Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a></li>
+<li>Game Music 2: "Love Planet" by Komiku (<a href="https://freemusicarchive.org/music/Komiku/Poupis_incredible_adventures_/Komiku_-_Poupis_incredible_adventures__-_32_Love_Planet">Source</a>). Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a></li>
+<li>Game Music 3: "Surfing" by Komiku (<a href="https://freemusicarchive.org/music/Komiku/Poupis_incredible_adventures_/Komiku_-_Poupis_incredible_adventures__-_05_Surfing">Source</a>). Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a></li>
+<li>Game Music 4: "Disco Cat" by Komiku (<a href="https://freemusicarchive.org/music/Komiku/Poupis_incredible_adventures_/Komiku_-_Poupis_incredible_adventures__-_16_Disco_Cat">Source</a>). Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a></li>
+<li>Game Music 5: "Garden party" by TRG Banks (<a href="https://freemusicarchive.org/music/TRG_Banks/The_Rainbows_End/Garden_party">Source</a>). Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+<ul>
+<li>The code for this example is adapted from the <a href="https://github.com/photonstorm/phaser/tree/v2.6.2/resources/Project%20Templates/Basic">Phaser Basic Project Template</a></li>
+<li>Closest Prototype to Game: <a href="https://phaser.io/examples/v2/games/starstruck">Starstruck</a></li>
+<li>Timers: <a href="https://phaser.io/examples/v2/games/starstruck">Starstruck</a></li>
+<li>Tilemaps: <a href="https://phaser.io/examples/v2/tilemaps/tileset-from-bitmapdata">Tileset From Bitmapdata</a></li>
+<li>Changing sprites: <a href="https://phaser.io/examples/v2/animation/change-texture-on-click">Change Texture on Click</a></li>
+<li>Rotation: <a href="https://phaser.io/examples/v2/sprites/sprite-rotation">Sprite Rotation</a></li>
+<li>Rotation: <a href="https://phaser.io/examples/v2/sprites/rotate-sprite-around-point">Rotate Sprite Around Point</a></li>
+<li>Immovable objects: <a href="https://phaser.io/examples/v2/arcade-physics/multiball">Multiball</a></li>
+<li>Bounding boxes: <a href="https://phaser.io/examples/v2/arcade-physics/bounding-box">Bounding Box</a></li>
+<li>Checking sprite overlap: <a href="https://phaser.io/examples/v2/sprites/overlap-tween-without-physics">Overlap Tween Without Physics</a></li>
+<li>Movement, collision, debug, game over text: <a href="https://rmays3.github.io/cs325-game-prototypes/digital-prototype-4/index.html">see Digital Prototype 4: Prototype Closest Other Game</a></li>
+<li>Sine: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin">Mozilla Javascript Reference</a></li>
+<li>Cosine: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cos">Mozilla Javascript Reference</a></li>
+<li>Pi: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI">Mozilla Javascript Reference</a></li>
+<li>Absolute value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs">Mozilla Javascript Reference</a></li>
+<li>Square root: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt">Mozilla Javascript Reference</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Look at objects to activate them and traverse the stage.
+</li>
+
+<li><strong>Theme:</strong>
+Iteration, no theme was added
+</li>
+
+<li><strong>Mandated Variety:</strong>
+Input: Keyboard
+Randomness: No randomness
+Genre: Platformer, Puzzle
+</li>
+
+<li><strong>Prototype Goal:</strong>
+Can I check for collision without using a bounding box?
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Players will experience satisfaction after besting a tricky puzzle using the sight mechanic and getting to the goal.
+</li>
+
+<li><strong>Gameplay:</strong>
+Players can move the character around with the left and right arrow keys, or with the A and D keys.  This character can also jump with the up arrow or W keys.  To change the character's line of sight to the left, use the Z or O keys.  To change it to the right, use the X or P keys.  The player can exit to the main menu any time with the backspace key, and change the current music with the space bar as they see fit.
+
+While playing this game, you will see three different colors of objects.  Blue objects are called "Laws."  They exist whether the player sees them or not.  Green and red objects are "Booleans."  If a Boolean is green, collision on the object is disabled.  If the Boolean is red, collision on the object is enabled.  The player can make a Boolean red by looking in its general direction.  They can also make a Boolean green by looking to the opposite way.
+</li>
+
+<li><strong>Strategies:</strong>
+Players will need to think carefully about what collisions need to be toggled on or off.  Players can turn Booleans on to use them as platforms, for example, or turn them off whenever they want to fall through the floor or go left or right without being blocked.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+You're a mining robot on the Blue Planet.  You were assigned on this mission in order to retrieve the yellow crystals that can be found near the planet's core.  These crystals have so much energy stored inside them, they can fuel Earth's electricity worldwide for three years! However, the Blue Planet's caverns can be puzzling, as certain minerals in the mines will disappear is they are not seen.  Can you best the maze and find the crystals?
+</li>
+
+<li><strong>Target Audience:</strong>
+Players of any age will enjoy this game, but younger players will like the bright colors and simple control scheme.
+</li>
+
+<li><strong>Play Time:</strong>
+This game takes around 3 minutes to play.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
