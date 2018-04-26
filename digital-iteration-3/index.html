@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Consciouspace</title>
+	<script src="js/phaser.min.js"></script>
+	<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/Game.js"></script>
+	<!-- main.js must come last since it references the other ones. -->
+	<script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>"Consciouspace"</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+In this game, your hitbox increases as you fire.
+</li>
+
+<li><strong>Technical Merit:</strong>
+The player's hitbox is visible, scaled, and centered on the player continuously.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned how groups worked in Phaser arcade physics, as well as how overlapping works.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>All assets not listed here were self-made.</li>
+<li>Button: Phaser example <a href="https://phaser.io/examples/v2/buttons/action-on-click">Action On Click</a></li>
+<li>Title Music: "Night in a Seashell" by Komiku (<a href="https://freemusicarchive.org/music/Komiku/Poupis_incredible_adventures_/Komiku_-_Poupis_incredible_adventures__-_42_Night_in_a_seashell">Source</a>). Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a></li>
+<li>Game Music: "The Challenge" by Komiku (<a href="https://freemusicarchive.org/music/Komiku/Poupis_incredible_adventures_/Komiku_-_Poupis_incredible_adventures__-_62_The_Challenge">Source</a>). Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+<ul>
+<li>The code for this example is adapted from the <a href="https://github.com/photonstorm/phaser/tree/v2.6.2/resources/Project%20Templates/Basic">Phaser Basic Project Template</a></li>
+<li>Closest Prototype to Game: <a href="https://phaser.io/examples/v2/games/invaders">Invaders</a></li>
+<li>Multiple object spawn, immovable objects, gravity: <a href="https://phaser.io/examples/v2/arcade-physics/multiball">Multiball</a></li>
+<li>Projectiles, overlap: <a href="https://phaser.io/examples/v2/games/invaders">Invaders</a></li>
+<li>Sprite anchoring: <a href="https://phaser.io/examples/v2/sprites/anchor">Anchor</a></li>
+<li>Sprite alpha: <a href="https://phaser.io/examples/v2/tweens/alpha-text">Alpha Text</a></li>
+<li>Immovable objects: <a href="https://phaser.io/examples/v2/arcade-physics/multiball">Multiball</a></li>
+<li>Checking sprite overlap: <a href="https://phaser.io/examples/v2/sprites/overlap-tween-without-physics">Overlap Tween Without Physics</a></li>
+<li>Movement, collision, debug, game over text: <a href="https://rmays3.github.io/cs325-game-prototypes/digital-prototype-7/index.html">see Digital Prototype 7: Prototype Closest Other Game</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Measure risk versus reward as abstract objects close in.
+</li>
+
+<li><strong>Theme:</strong>
+Iteration, no theme was added
+</li>
+
+<li><strong>Mandated Variety:</strong>
+Input: Keyboard
+Randomness: Random stars in the scenery and enemy placement
+Genre: Space shooter
+</li>
+
+<li><strong>Prototype Goal:</strong>
+Can I create randomized scenery and enemies?
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Players will experience satisfaction after weaving through enemy waves with a shrinking hitbox, only firing when they need to.
+</li>
+
+<li><strong>Gameplay:</strong>
+Players can move the character around with the arrow keys or WASD.  Pressing the space bar will fire a bullet, but this will also increase the player's hitbox, which is indicated in red, as long as the space bar is held.  Don't worry, this hitbox will also decrease over time.  Pressing the backspace button will return the player to the title screen.
+
+Players must be on the lookout for the red squares coming from the right.  If either the player or their hitbox touches them, game over! One blast will destroy any red box, but remember your hitbox while doing so.  And be warned that the red squares will become gradually faster as the game continues.  How long can you last?
+</li>
+
+<li><strong>Strategies:</strong>
+Players will need to only fire shots when they need to in order to keep their hitbox as low as possible.  Ideally, a player will feather the space bar lightly and only when they are cornered by red boxes.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+Far into the open space of the dream world lies a small blue box.  That's your consciousness! It can move and express freely within the dream world.  However, if it or its Conscious Aura, which is a red barrier around the consciousness, touches an Abstraction, the dream is over and you wake up.  And the more work your consciousness does to stay in the dream world, the harder it is to do so.  Can you get a good night's sleep?
+</li>
+
+<li><strong>Target Audience:</strong>
+Players of any age will enjoy this game, but younger players will like the bright colors and simple control scheme.
+</li>
+
+<li><strong>Play Time:</strong>
+This game takes around 3 minutes to play.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
