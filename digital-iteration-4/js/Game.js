@@ -56,6 +56,7 @@ GameStates.makeGame = function( game, shared ) {
 		percent = 0;
 		time = 0;
 		obSpeed = -160;
+		obScale = 1.0;
 		playerRadius = 1;
 		redField.scale.set(fieldScale* playerRadius);
 		redField.anchor.setTo(0, 0);
